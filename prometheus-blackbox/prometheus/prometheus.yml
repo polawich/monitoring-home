@@ -42,5 +42,5 @@ scrape_configs:
   - job_name: 'mikrotik'
     static_configs:
          - targets:
-            - 'mikrotik_exporter:9436'
+#            - 'mikrotik_exporter:9436'
             - '192.168.15.55:49090'
