@@ -39,3 +39,8 @@ scrape_configs:
         target_label: instance
       - target_label: __address__
         replacement: blackbox:9115
+  - job_name: 'mikrotik'
+    static_configs:
+         - targets:
+            - 'mikrotik_exporter:9436'
+            - '192.168.15.55:49090'
